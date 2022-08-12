@@ -1,0 +1,522 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+body {
+
+  margin: 0 auto;
+
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: grey;
+}
+
+.text-grey {
+  color: grey;
+}
+
+/*BANNER*/
+#banner {
+  position: relative;
+}
+
+.name {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: -44.5%;
+}
+
+.name.role {
+  top:60%;
+  right: -46.5%;
+}
+
+.name span {
+  transform: translate(0.-50%);
+}
+
+/*MAKE TEXTS BLACK*/
+.black-text {
+  color: black;
+}
+
+
+section > .container {
+  /* width: 1170px; */
+  margin: auto;
+  display: block;
+
+  padding: 30px 50px;
+}
+
+#banner {
+  position: relative;
+}
+
+/*TEXT ON IMG*/
+.banner-text h1, .banner-text span { 
+  position: absolute;
+  color: white;
+  top: 40%;
+  right: 50%;
+  transform: translate(50%,50%);
+  text-transform: uppercase;
+}
+
+.banner-text h1 {
+  font-size: 36px;
+}
+.banner-text span {
+  top: 55%;
+}
+
+
+/*NAV BAR*/
+#nav-bar .container {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+}
+
+#nav-bar .container div {
+  text-align: center;
+  padding: 15px 50px;
+  text-decoration: none;
+}
+
+/*STYLING HOVER NAV BUTTONS*/
+#nav-bar .container div:hover {
+  background-color: #228be6;
+}
+
+#nav-bar .container div:hover a {
+  color: white;
+}
+
+#nav-bar .container div:hover i {
+  color: white;
+}
+
+#nav-bar .container div:first-child,
+#nav-bar .container div:last-child {
+  border-right: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+}
+
+#nav-bar .container div a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+#nav-bar .container div i {
+  color: #4dabf7;
+}
+
+#navbar {
+  position:relative;
+}
+
+.avatar {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  top: -60%;
+  border: 12px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+}
+
+#nav-bar .container div:nth-child(2) {
+  padding-right: 120px;
+}
+
+#nav-bar .container div:nth-child(4) {
+  padding-left: 120px;
+}
+
+/*ABOUT SECTION*/
+#about .container-fluid {
+  display: grid;
+  
+  grid-template-columns: 50% 50%;
+
+  align-items: top;
+  justify-content: center;
+  padding: 0;
+}
+
+.section-title {
+  font-size: 24px;
+  margin: 30px 0;
+}
+
+#personal-info {
+  background-color: rgb(237, 237, 237);
+  padding: 40px 50px;
+}
+
+#personal-info ul {
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+#personal-info ul li {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+#personal-info ul li span:first-child {
+  color: black;
+  margin-right: 20px;
+}
+
+.info-icons i {
+  color: #4dabf7;
+}
+#target {
+  justify-self: right;
+  width: auto;
+  padding: 30px 50px;
+}
+
+#target .section-title{
+  margin-top: 40px;
+}
+
+#about {
+  margin-bottom: 30px;
+}
+
+/*JOB INFO SECTION*/
+#job-info .container-fluid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  row-gap: auto;
+}
+
+.job-info-card {
+  width: auto;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 100px 1fr;
+
+  border: 1px solid lightgrey;
+
+  align-items: top;
+  justify-items: left;
+}
+
+
+.job-info-card i {
+  align-self: center;
+}
+
+.job-info-card ul li {
+  margin: 0 50px 40px 50px;
+}
+
+.job-info-card .section-title {
+  margin-left: 30px;
+}
+
+.current {
+  background-color: #228be6;
+  padding: 4px 10px;
+  border-radius: 5px;
+  color: white;
+  font-style: italic;
+}
+
+.job-info-card ul {
+  list-style: none;
+  grid-column: 1 / -1;
+}
+
+.job-info-card ul li::before {
+  content: "\2022";
+  color: #228be6;
+  font-weight: bolder;
+  display: inline-block;
+  width: 20px;
+  margin-left: -22px;
+  font-size: 24px;
+}
+
+/*SIZING ICON*/
+.ic-toolbox,
+.ic-pencil,
+.ic-tools-2,
+.ic-mic,
+.ic-telescope {
+  font-size: 36px;
+}
+
+.info-icon {
+  justify-self: left;
+}
+/*HOBBY*/
+.info-hobby {
+  justify-self: center;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-around
+  gap: 12px;
+}
+
+.ic-megaphone,
+.ic-strategy,
+.ic-hotairballoon,
+.ic-basket {
+  font-size: 18px;
+  justify-self: center;
+}
+
+.ic-megaphone {
+  padding: 10px 0 0 7px;
+}
+
+.ic-strategy {
+  padding: 10px 0 0 10px;
+}
+
+.ic-hotairballoon {
+  padding: 10px 0 0 10px;
+}
+
+.ic-basket {
+  padding: 10px 0 0 7px;
+}
+
+.info-hobby i {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #4dabf7;
+  border-radius: 60%;
+  color: #4dabf7;
+  margin-bottom: 12px;
+}
+
+.info-hobby p {
+  justify-self: center;
+}
+
+.info-hobby {
+  margin-bottom: 50px;
+}
+
+.job-info-card {
+  height:fit-content;
+}
+ .column-1, .column-2, .column-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+ }
+
+/*Level*/
+.level {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.level-disable {
+  background: #dee2e6;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+
+/*LANGUAGE & SKILL*/
+.language-info, .skill-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px 50px 30px;
+  gap: 20px;
+}
+
+
+/*CERT SECTION*/
+#certificate {
+  margin: 50px 0;
+  padding: 10px;
+}
+.cert-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+.cert-img {
+  max-width: 100%; height: auto;
+}
+
+.cert-card {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 20px 30px;
+ 
+}
+
+.cert-card p:first-child {
+ 
+  text-transform: uppercase;
+}
+
+.cert-card:nth-child(even){
+  border-left: 1px solid #d6c08d;
+  
+}
+
+.cert-card:nth-child(2), .cert-card:first-child {
+ 
+  border-bottom: 1px solid #d6c08d;
+}
+
+.cert-text {
+  padding-left: 20px;
+}
+
+/*PROJECT SECTION*/
+.project-section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  
+}
+
+
+.project-img {
+  max-width: 100%; height: auto;
+}
+
+.project-card {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  border: 1px solid lightgray;
+  /* border-top: none; */
+  align-items: center;
+  justify-content: center;
+
+  max-width: 100%; height: auto;
+ 
+}
+
+.project-card div {
+  border-top: 1px solid lightgrey;
+  
+}
+
+.project-name {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  height: 40px;
+}
+
+.project-info {
+
+  padding: 10px 20px;
+  height: 40px;
+}
+
+.project-text{
+  border-top: 1px solid lightgrey;
+  padding: 10px;
+}
+
+td {
+  vertical-align: top;
+}
+
+.project-year {
+  background-color: #4dabf7;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 12px;
+  margin-right: 12px;
+}
+
+#project {
+  margin: 50px 0;
+  padding: 10px;
+}
+
+#project a:hover {
+ color: #199cdb;
+ transform: scale(1.05);
+  
+}
+
+/*FOOTER*/
+
+#footer {
+  padding: 20px 0;
+}
+
+#footer .container-fluid ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+#footer .container-fluid ul li i {
+  color:#4dabf7;
+}
+
+#footer .container-fluid ul li a:link,  #footer .container-fluid ul li a:visited {
+  color: grey;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#footer .container-fluid ul li a:hover,  #footer .container-fluid ul li a:active {
+  font-weight: bold;
+}
+
+.icon-facebook-circled
+,.icon-linkedin-circled
+,.icon-github-circled {
+  font-size: 36px;
+}
+
+#footer .container-fluid li {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.section-title {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+
+/* BOOSTRAP OVERWRITING EDIT */
+ul{
+  padding-left: 0;
+}
+ 
+
+

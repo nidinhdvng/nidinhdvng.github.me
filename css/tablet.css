@@ -1,0 +1,56 @@
+@media screen and (max-width: 995px) {
+  .avatar {
+    display: none !important;
+  }
+
+  #nav-bar .container div {
+    padding: 10px 50px;
+  }
+  #nav-bar .container div:nth-child(2) {
+    padding: 10px 50px;
+    border-right: 1px solid lightgray;
+  }
+
+  #nav-bar .container div:nth-child(4) {
+    padding: 10px 50px;
+  }
+
+  .name {
+    top: 40%;
+    left: 6%;
+  }
+
+  #job-info .container-fluid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .column-3 {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .level {
+    width: 20px;
+  }
+  .cert-card {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px 30px;
+  }
+
+  .cert-text {
+    padding: 10px 0;
+  }
+
+  .project-section {
+    grid-template-columns: auto auto;
+  }
+
+  .icon-facebook-circled,
+  .icon-linkedin-circled,
+  .icon-github-circled {
+    font-size: 24px;
+  }
+}

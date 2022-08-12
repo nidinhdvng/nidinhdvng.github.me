@@ -1,0 +1,91 @@
+@media (max-width: 576px) {
+  body {
+    /* background-color: rgb(210, 199, 132); */
+  }
+  .avatar {
+    display: none !important;
+  }
+  #nav-bar .container {
+    display: block;
+    justify-content: start;
+    margin: 0px;
+    max-width: 100%;
+  }
+  #nav-bar .container div {
+    width: 100%;
+    padding: 10px 50px;
+  }
+
+  #nav-bar .container div:nth-child(2) {
+    border-right: none;
+  }
+
+  #nav-bar .container div:first-child,
+  #nav-bar .container div:last-child {
+    border: none;
+  }
+
+  .name {
+    top: 30%;
+    left: 10%;
+  }
+
+  #nav-bar .container div {
+    text-align: start;
+    /* padding: 20px 50px; */
+    text-decoration: none;
+  }
+
+  #about .container-fluid {
+    grid-template-columns: 1fr;
+  }
+
+  #job-info .container-fluid {
+    grid-template-columns: 1fr;
+  }
+
+  .level {
+    width: 50px;
+  }
+
+  .column-3 {
+    grid-template-columns: 1fr;
+  }
+  .cert-section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .cert-card {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto;
+  }
+
+  .cert-card:nth-child(even) {
+    border-left: 0;
+  }
+
+  .project-section {
+    grid-template-columns: auto;
+  }
+
+  .project-section {
+    gap: 30px;
+  }
+
+  .icon-facebook-circled,
+  .icon-linkedin-circled,
+  .icon-github-circled {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 315px) {
+  .project-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+}
